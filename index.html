@@ -59,7 +59,7 @@
                 <div class="flex items-center bg-[#F4F7FF] px-4 py-4 rounded-lg my-4 w-3xs">
                     <div class="flex items-center">
                         <img src="./assets/calender.png" alt="">
-                        <p id="current-date" class="m-3"></p>
+                        <p id="current-date" class="m-3 font-semibold"></p>
                     </div>
                 </div>
             </div>
@@ -156,13 +156,14 @@
                 </div>
             </div>
         </div>
-        <div id="activity-log" class="bg-white w-xs rounded-2xl justify-between">
+        <div class="bg-white w-xs rounded-2xl justify-between">
             <div class="flex justify-center my-4">
                 <img src="./assets/activity.png" alt="">
                 <p class="text-[#00303C] mx-2">Activity Log</p>
             </div>
-            <div class="mx-24">
-                <button id="cleat-btn" class="text-white bg-blue-700 rounded-lg px-3 py-2 ">Clear History</button>
+            <div class="">
+                <button id="clear-btn" class="text-white mx-24 bg-blue-700 rounded-lg px-3 py-2 ">Clear History</button>
+                <div id="activity-log"></div>
             </div>
         </div>
     </main>

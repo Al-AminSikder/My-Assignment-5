@@ -27,6 +27,34 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// Clear History
+document.addEventListener("DOMContentLoaded", function () {
+    const clearHistoryButton = document.getElementById("clear-btn");
+    const activityLogContainer = document.getElementById("activity-log");
+
+    if (clearHistoryButton && activityLogContainer) {
+        clearHistoryButton.addEventListener("click", function () {
+            activityLogContainer.innerHTML = "";
+        });
+    }
+});
+
+// Current Date
+document.addEventListener("DOMContentLoaded", function () {
+    const dateElement = document.getElementById("current-date");
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const now = new Date();
+    const dayName = days[now.getDay()];
+    const date = now.getDate();
+    const month = now.toLocaleString("default", { month: "long" });
+    const year = now.getFullYear();
+
+    // Format: Wednesday, March 5, 2025
+    const formattedDate = `${dayName}, ${month} ${date}, ${year}`;
+
+    // Insert into HTML
+    dateElement.textContent = formattedDate;
+});
 
 // Button-1
 const completeButton1 = document.getElementById("btn-1");
@@ -62,7 +90,7 @@ completeButton1.addEventListener("click", function () {
     let activityLog = document.getElementById("activity-log");
     let newPragraph = document.createElement("p");
     newPragraph.classList.add(
-        'p-5',
+        'p-3',
         'bg-[#F4F7FF]',
         'rounded-lg',
         'shadow-sm',
