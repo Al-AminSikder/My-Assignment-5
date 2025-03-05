@@ -1,3 +1,4 @@
+// Random Background Color
 function getRandomColor() {
     let letters = "0123456789ABCDEF";
     let color = "#";
@@ -12,7 +13,7 @@ document.getElementById("random-color").addEventListener("click", function () {
     document.body.style.backgroundColor = randomColor;
 });
 
-// Discove Button
+// Discover Button
 document.addEventListener("DOMContentLoaded", function () {
     const discoverButton = document.getElementById("discover-btn");
     if (discoverButton) {
@@ -27,11 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-// Clear History
+// Clear History Button
 document.addEventListener("DOMContentLoaded", function () {
     const clearHistoryButton = document.getElementById("clear-btn");
     const activityLogContainer = document.getElementById("activity-log");
-
     if (clearHistoryButton && activityLogContainer) {
         clearHistoryButton.addEventListener("click", function () {
             activityLogContainer.innerHTML = "";
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Current Date
+// Current Day and Date
 document.addEventListener("DOMContentLoaded", function () {
     const dateElement = document.getElementById("current-date");
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -48,11 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const date = now.getDate();
     const month = now.toLocaleString("default", { month: "long" });
     const year = now.getFullYear();
-
-    // Format: Wednesday, March 5, 2025
     const formattedDate = `${dayName}, ${month} ${date}, ${year}`;
-
-    // Insert into HTML
     dateElement.textContent = formattedDate;
 });
 
