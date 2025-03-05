@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Something New Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    </style>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF] poppins-regular">
+    <Header>
+        <nav>
+            <div class="my-6 mx-20 bg-white px-4 py-4 rounded-xl flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="./assets/logo.png" alt="Logo">
+                    <h1 class="text-2xl mx-2">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div>
+                    <button id="back-btn" class= "bg-blue-600 text-white px-2 py-1 rounded-md">Back to Desk</button>
+                   
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <main>
+        <div class="my-6 mx-20">
+            <div class="bg-white rounded-md p-3 my-3">
+                <p>Question-1: What are the different ways to select an element in the DOM?</p>
+                <p class="mt-4">Answar: There are 5 ways to select an element in the DOm</p>
+            </div>
+            <div class="bg-white rounded-md p-3 my-3">
+                <p>Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <p class="mt-4">Answar: The properties innerHTML, innerText, and textContent are used to get or modify the content inside an HTML element.</p>
+            </div>
+            <div class="bg-white rounded-md p-3 my-3">
+                <p>Question-3: What is event delegation in the DOM?</p>
+                <p class="mt-4">Answar: Event delegation is a technique in JavaScript where a single event listener is added to a parent element to handle events on multiple child elements, even if they are dynamically added later.</p>
+            </div>
+            <div class="bg-white rounded-md p-3 my-3">
+                <p>Question-4: What is event bubbling in the DOM?</p>
+                <p class="mt-4">Answar: Event bubbling is a phase of event propagation in the DOM where an event starts from the target element and propagates (bubbles) up through its ancestors (parent elements) until it reaches the root.</p>
+            </div>
+            <div class="bg-white rounded-md p-3 my-3">
+                <p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <p class="mt-4">Answar: To create a new element in JavaScript, use the document.createElement() method.
+                    There are several ways to insert an element into the DOM like appendChild(), prepend(), append() etc.
+                    To remove an element, use one of these methods like remove().
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="./assignment2.js"></script>
+</body>
+</html>
